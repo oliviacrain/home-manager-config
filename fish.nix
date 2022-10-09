@@ -7,12 +7,14 @@
     '';
     programs.fish = {
         enable = true;
+
         plugins = [
             {
                 name = "foreign-env";
                 src = pkgs.fishPlugins.foreign-env.src;
             }
         ];
+
         shellInit = 
         ''
             if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
@@ -21,6 +23,10 @@
             if test -e $HOME/.nixinit
                 fenv source $HOME/.nixinit
             end
+        '';
+
+        interactiveShellInit = ''
+            set fish_greeting ""
         '';
     };
 }
