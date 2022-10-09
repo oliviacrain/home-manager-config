@@ -38,6 +38,7 @@
     findutils
     fish
     fishPlugins.foreign-env
+    fishPlugins.pure
     git
     gnutar
     go

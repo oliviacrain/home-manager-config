@@ -13,6 +13,10 @@
                 name = "foreign-env";
                 src = pkgs.fishPlugins.foreign-env.src;
             }
+            {
+                name = "pure";
+                src = pkgs.fishPlugins.pure.src;
+            }
         ];
 
         shellInit = 
