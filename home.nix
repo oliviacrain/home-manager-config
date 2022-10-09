@@ -44,6 +44,7 @@
     go
     jq
     neovim
+    openssl_3
     pigz
     podman
     pre-commit
